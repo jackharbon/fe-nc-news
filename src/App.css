@@ -1,3 +1,73 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
+ul { margin: 0; padding: 0; list-style: none; }
 
-body { font-family: 'Lato',sans-serif; line-height: 1.4; color: #444; background: #fff; height: 100vh; }
+/* ------ THEME COLORS ------ */
+
+.App { background-color: var(--color-primary); color: var(--font-color); }
+a { color: var(--color-accent); text-decoration: none; }
+a:active, a:hover { color: var(--color-hover); }
+footer, nav { background-color: var(--color-secondary); }
+
+/* ------ APP GRID ------ */
+
+.App { display: grid; grid-gap: 1rem; grid-auto-flow: row; }
+
+/* ------ NAV MENU ------ */
+
+nav { height: 80px; text-align: center; justify-content: space-between; display: inline-flex; flex-direction: row; align-items: center; align-content: center; flex-wrap: nowrap; position: sticky; top: 0; padding: 10px; }
+@media (max-width: 768px) {
+  nav { height: 60px; }
+}
+
+/* - burger menu - */
+
+.burger-menu-closed { padding: 1rem; }
+.burger-menu-open { background-color: red; margin-top: 120px; }
+
+.burger-menu-div { display: flex; flex-direction: column; margin: 0; padding: 0; flex-wrap: nowrap; align-items: stretch; background-color: var(--color-primary); z-index: 99999; }
+
+/* - top menu - */
+
+.top-menu-ul { display: flex; flex-direction: row; text-align: start; flex-wrap: nowrap; align-content: center; justify-content: space-evenly; align-items: center; }
+
+.top-menu-ul > li { margin: 0 1rem; overflow: hidden; font-size: 1.4rem; text-transform: uppercase; }
+
+.top-menu-ul > li > a { color: var(--font-color); padding: 0 0.5rem; }
+.top-menu-ul > li > a:active, .top-menu-ul > li > a:hover { color: var(--color-accent); }
+
+/* - toggle theme - */
+
+#switch { padding: 1rem; font-size: 3rem; position: absolute; right: 5%; }
+
+.material-symbols-outlined { font-variation-settings: 'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 48; cursor: pointer; color: var(--font-color); }
+
+/* ------ ASIDE  ------ */
+
+/* - topics menu - */
+
+/* ------ CONTENT FLEX ------ */
+
+main { display: flex; flex-wrap: wrap; background: rgb(47, 2, 47); text-align: center; justify-content: center; }
+aside { background-color: orange; flex: 16%; }
+.content { background-color: #ff0; flex: 84%; }
+@media (max-width: 768px) {
+  aside, content { flex: 100%; }
+}
+
+/* ------ HOME & ARTICLES ------ */
+
+/* - section home & articles - */
+
+.articles .home { display: flex; border: 2px solid #fff; flex-wrap: wrap; text-align: center; justify-content: center; }
+
+/* - cards home & articles - */
+
+.articles > div, .home > div { background-color: #fff; width: 23vw; margin: 1vw; text-align: center; line-height: 1.75rem; font-size: 1rem; padding: 0.2rem; }
+
+/* - img - */
+
+img { width: 92%; aspect-ratio: 1/1; object-fit: cover; }
+
+/* ------ RESPONSIVE ------ */
+
+
