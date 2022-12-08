@@ -3101,11 +3101,11 @@
             "parentId": "09af99a0-ea41-418c-09a1-276b8cefb964",
             "childIndex": 2,
             "point": [
-              1416.4,
+              1420.4,
               787.19
             ],
             "rotation": 0,
-            "text": "Main - grid:",
+            "text": "Main - flex:",
             "style": {
               "color": "violet",
               "size": "medium",
@@ -3329,8 +3329,8 @@
             "parentId": "09af99a0-ea41-418c-09a1-276b8cefb964",
             "childIndex": 5,
             "point": [
-              1421,
-              974.88
+              1425,
+              885.54
             ],
             "rotation": 0,
             "text": "content - flex:",
@@ -11071,6 +11071,28 @@
               "isFilled": false,
               "dash": "draw",
               "scale": 1
+            }
+          },
+          "0b1efcbf-dc0e-46e0-32ff-0df306b41528": {
+            "id": "0b1efcbf-dc0e-46e0-32ff-0df306b41528",
+            "type": "text",
+            "name": "Text",
+            "parentId": "09af99a0-ea41-418c-09a1-276b8cefb964",
+            "childIndex": 6,
+            "point": [
+              1425,
+              957.52
+            ],
+            "rotation": 0,
+            "text": "home / articles",
+            "style": {
+              "color": "yellow",
+              "size": "medium",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "sans",
+              "textAlign": "middle"
             }
           }
         },

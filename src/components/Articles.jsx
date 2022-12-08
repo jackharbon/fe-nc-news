@@ -22,12 +22,14 @@ const Articles = () => {
 				) : (
 					<>
 						{articles.map(({ article_id, topic, title, author, created_at, votes, comment_count, img_url }) => (
-							<div key={article_id}>
-								<h3>{topic}</h3>
+							<div className='articles-card-div' key={article_id}>
+								<Link className='topic-link' to={`/articles/topics/${topic}`}>
+									<h3>{topic}</h3>
+								</Link>
 								<Link to={`/articles/${article_id}`}>
 									<h3>{title}</h3>
 								</Link>
-								<img src={img_url} alt={title} />
+								<img className='articles-img' src={img_url} alt={title} />
 								<h4>Author: {author}</h4>
 								<p>Date: {created_at.substring(0, 10)}</p>
 								<p>

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
 	return (
 		<footer>
-			<img src='./logo192.png' alt='logo' />
+			<img src='../../logo192.png' alt='logo' />
 			<div className='footer-div'>
 				{'Copyright © '}
 				<Link href='https://northcoders.com/'>Northcoders</Link> {new Date().getFullYear()}
