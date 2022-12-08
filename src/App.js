@@ -14,8 +14,8 @@ function App() {
 	const { isMobile } = useScreenSize();
 	return (
 		<div className='App'>
-			<Nav />
 			{location.pathname === '/' ? <Header /> : null}
+			<Nav />
 			<main>
 				{isMobile ? null : <Aside />}
 				<div className='content'>

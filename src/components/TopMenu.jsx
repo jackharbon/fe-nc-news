@@ -8,6 +8,8 @@ export default function TopMenu() {
 			<li>
 				<Link to='/'>Home</Link>
 				<Link to='/articles'>Articles</Link>
+				<Link to='/articles'>Articles</Link>
+				<Link to='/articles'>Articles</Link>
 			</li>
 		</ul>
 	);

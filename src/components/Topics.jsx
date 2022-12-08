@@ -13,8 +13,8 @@ const Topics = () => {
 
 	return (
 		<section className='topics'>
-			<h2>Topics</h2>
-			<ul className='topics_menu-ul'>
+			<h3>Topics</h3>
+			<ul className='topics-menu-ul'>
 				{topics.map(({ slug, description }) => (
 					<li key={slug}>
 						<Link to={`/topics/${slug}`}>

@@ -15,7 +15,7 @@ const BurgerNav = () => {
 			<HamburgerMenu
 				isOpen={isOpen}
 				menuClicked={handleClick}
-				width={30}
+				width={40}
 				height={20}
 				strokeWidth={4}
 				rotate={0}

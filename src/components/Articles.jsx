@@ -14,28 +14,31 @@ const Articles = () => {
 	}, []);
 
 	return (
-		<section className='articles'>
+		<>
 			<h2>Articles</h2>
-			{isLoading ? (
-				<h3>... loading</h3>
-			) : (
-				<>
-					{articles.map(({ article_id, topic, title, author, created_at, votes, comment_count, img_url }) => (
-						<div key={article_id}>
-							<Link to={`/articles/${article_id}`}>
-								<h3>{title}</h3>
-							</Link>
-							<img src={img_url} alt={title} />
-							<h4>{author}</h4>
-							<h3>{topic}</h3>
-							<p>{created_at}</p>
-							<p>{votes}</p>
-							<p>{comment_count}</p>
-						</div>
-					))}
-				</>
-			)}
-		</section>
+			<section className='articles'>
+				{isLoading ? (
+					<h3>... loading</h3>
+				) : (
+					<>
+						{articles.map(({ article_id, topic, title, author, created_at, votes, comment_count, img_url }) => (
+							<div key={article_id}>
+								<h3>{topic}</h3>
+								<Link to={`/articles/${article_id}`}>
+									<h3>{title}</h3>
+								</Link>
+								<img src={img_url} alt={title} />
+								<h4>Author: {author}</h4>
+								<p>Date: {created_at.substring(0, 10)}</p>
+								<p>
+									Votes: {votes} | Comments: {comment_count}
+								</p>
+							</div>
+						))}
+					</>
+				)}
+			</section>
+		</>
 	);
 };
 

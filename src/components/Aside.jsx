@@ -5,7 +5,7 @@ import Topics from './Topics';
 export default function Aside() {
 	return (
 		<aside>
-			<div className='aside_topics_menu'>
+			<div className='aside-topics-menu'>
 				<Topics />
 			</div>
 		</aside>

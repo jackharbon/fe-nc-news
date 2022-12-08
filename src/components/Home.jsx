@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getArticles } from '../utils/api';
+import DOMPurify from 'isomorphic-dompurify';
 
 const Home = () => {
 	const [articles, setArticles] = useState([]);
@@ -14,28 +15,41 @@ const Home = () => {
 	}, []);
 
 	return (
-		<section className='home'>
+		<>
 			<h2>Home</h2>
-			{isLoading ? (
-				<h3>... loading</h3>
-			) : (
-				<>
-					{articles.map(({ article_id, topic, title, author, created_at, votes, comment_count, img_url }) => (
-						<div key={article_id}>
-							<Link to={`/articles/${article_id}`}>
-								<h3>{title}</h3>
-							</Link>
-							<img src={img_url} alt={title} />
-							<h4>{author}</h4>
-							<h3>{topic}</h3>
-							<p>{created_at}</p>
-							<p>{votes}</p>
-							<p>{comment_count}</p>
-						</div>
-					))}
-				</>
-			)}
-		</section>
+			<div className='introText'>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Cras sed felis eget velit. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit amet.{' '}
+					<i>Turpis egestas</i> pretium aenean pharetra magna ac placerat vestibulum. Orci dapibus ultrices in iaculis nunc sed
+					augue. Bibendum at varius vel pharetra vel turpis nunc.
+				</p>
+				<h4>Odio eu feugiat pretium </h4>
+				<p>
+					Pibh ipsum consequat nisl vel pretium. Leo vel fringilla est ullamcorper eget. Praesent elementum facilisis leo vel
+					fringilla est ullamcorper eget nulla. Magna etiam tempor orci eu. Fringilla phasellus faucibus scelerisque eleifend
+					donec pretium vulputate. In aliquam sem fringilla ut morbi tincidunt augue interdum.
+				</p>
+			</div>
+			<section className='home'>
+				{isLoading ? (
+					<h3>... loading</h3>
+				) : (
+					<>
+						{articles.map(({ article_id, topic, title, author, created_at, img_url }) => (
+							<div key={article_id}>
+								<h4>{topic}</h4>
+								<Link to={`/articles/${article_id}`}>
+									<h3>{title}</h3>
+								</Link>
+								<img src={img_url} alt={title} />
+								<h4>Author: {author}</h4>
+							</div>
+						))}
+					</>
+				)}
+			</section>
+		</>
 	);
 };
 
