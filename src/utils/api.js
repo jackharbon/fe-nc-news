@@ -24,3 +24,13 @@ export const getTopics = () => {
 			console.log(err);
 		});
 };
+export const getArticle = (article_id) => {
+	return articlesApi
+		.get(`/articles/${article_id}`)
+		.then((res) => {
+			return res.data.article;
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+};

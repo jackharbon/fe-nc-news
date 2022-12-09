@@ -37,12 +37,12 @@ const Home = () => {
 				) : (
 					<>
 						{articles.map(({ article_id, topic, title, author, created_at, img_url }) => (
-							<div key={article_id}>
+							<div className='home-card-div' key={article_id}>
 								<h4>{topic}</h4>
 								<Link to={`/articles/${article_id}`}>
 									<h3>{title}</h3>
 								</Link>
-								<img src={img_url} alt={title} />
+								<img className='articles-img' src={img_url} alt={title} />
 								<h4>Author: {author}</h4>
 							</div>
 						))}
