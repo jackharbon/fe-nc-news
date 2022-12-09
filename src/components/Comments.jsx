@@ -10,7 +10,7 @@ const Comments = () => {
 
 	useEffect(() => {
 		getComments(article_id).then((fetchedComments) => {
-			setIsLoading(false);
+			setIsLoading(true);
 			setComments(fetchedComments);
 		});
 	}, [article_id]);

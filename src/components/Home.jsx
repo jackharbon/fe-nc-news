@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getArticles } from '../utils/api';
-import DOMPurify from 'isomorphic-dompurify';
 
 const Home = () => {
 	const [articles, setArticles] = useState([]);
