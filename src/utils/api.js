@@ -34,3 +34,13 @@ export const getArticle = (article_id) => {
 			console.log(err);
 		});
 };
+export const getComments = (article_id) => {
+	return articlesApi
+		.get(`/articles/${article_id}/comments`)
+		.then((res) => {
+			return res.data.comments;
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+};
