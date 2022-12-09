@@ -36,10 +36,18 @@ export default function Article() {
 							<img className='article-img' src={article.img_url} alt={article.title} />
 							<p className='article-body'>{article.body}</p>
 							<h4>Author: {article.author}</h4>
-							<p className='article-date'>
-								Date: {article.created_at.substring(0, 10)} | Votes: {article.votes}
-							</p>
-							<button onClick={ShowComments}>{buttonText}</button>
+							<div className='article-date-div'>
+								<p className='article-date-p'>Date: {article.created_at.substring(0, 10)}</p>
+								<div className='article-votes-counter-div'>
+									<p>Likes:</p>
+									<span className='material-symbols-outlined'>thumb_up</span>
+									<span className='article-votes-counter'>{article.votes}</span>
+									<span className='material-symbols-outlined'>thumb_down</span>
+								</div>
+							</div>
+							<button className='show-comments-button' onClick={ShowComments}>
+								{buttonText}
+							</button>
 							{isOpen ? <Comments /> : null}
 						</div>
 					</>
