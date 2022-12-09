@@ -1770,6 +1770,50 @@
               "dash": "draw",
               "scale": 1
             }
+          },
+          "74e94ced-4bcb-493b-0cc3-d1da960e5d9f": {
+            "id": "74e94ced-4bcb-493b-0cc3-d1da960e5d9f",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 21,
+            "point": [
+              -22.27,
+              498.75
+            ],
+            "rotation": 0,
+            "text": "DELETE /api/comments/:comment_id",
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "middle"
+            }
+          },
+          "d7fa7d7a-f471-4873-2b4e-b8c9c454feda": {
+            "id": "d7fa7d7a-f471-4873-2b4e-b8c9c454feda",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 16,
+            "point": [
+              -1131.39,
+              115.71
+            ],
+            "rotation": 0,
+            "text": "PATCH /api/articles/:article_id",
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "middle"
+            }
           }
         },
         "bindings": {
@@ -9994,7 +10038,7 @@
               787.6
             ],
             "size": [
-              91,
+              101,
               130.30999999999995
             ],
             "rotation": 0,
@@ -10022,7 +10066,7 @@
               1983.12
             ],
             "size": [
-              91,
+              101,
               130.30999999999995
             ],
             "rotation": 0,
@@ -10116,7 +10160,7 @@
               1970.26
             ],
             "size": [
-              91,
+              101,
               130.31000000000017
             ],
             "rotation": 0,
