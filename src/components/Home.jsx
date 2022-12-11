@@ -40,8 +40,8 @@ const Home = () => {
 								<h4>{topic}</h4>
 								<Link to={`/articles/${article_id}`}>
 									<h3>{title}</h3>
+									<img className='articles-img' src={img_url} alt={title} />
 								</Link>
-								<img className='articles-img' src={img_url} alt={title} />
 								<h4>Author: {author}</h4>
 							</div>
 						))}

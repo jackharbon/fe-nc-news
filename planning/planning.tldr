@@ -1770,6 +1770,50 @@
               "dash": "draw",
               "scale": 1
             }
+          },
+          "74e94ced-4bcb-493b-0cc3-d1da960e5d9f": {
+            "id": "74e94ced-4bcb-493b-0cc3-d1da960e5d9f",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 21,
+            "point": [
+              -22.27,
+              498.75
+            ],
+            "rotation": 0,
+            "text": "DELETE /api/comments/:comment_id",
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "middle"
+            }
+          },
+          "d7fa7d7a-f471-4873-2b4e-b8c9c454feda": {
+            "id": "d7fa7d7a-f471-4873-2b4e-b8c9c454feda",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 16,
+            "point": [
+              -1131.39,
+              115.71
+            ],
+            "rotation": 0,
+            "text": "PATCH /api/articles/:article_id",
+            "style": {
+              "color": "blue",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "middle"
+            }
           }
         },
         "bindings": {
@@ -1889,11 +1933,11 @@
             "parentId": "3be9118a-a914-4a60-1dae-91cf8075d560",
             "childIndex": 3.25,
             "point": [
-              -1574.78,
-              444.76000000000005
+              -1570.04,
+              417.47
             ],
             "rotation": 0,
-            "text": "comment_count / body",
+            "text": "comment_count\n \nbody",
             "style": {
               "color": "black",
               "size": "small",
@@ -1901,7 +1945,7 @@
               "dash": "draw",
               "scale": 1.2067476065473537,
               "font": "mono",
-              "textAlign": "middle"
+              "textAlign": "start"
             }
           },
           "9334d40d-403c-4305-08b2-0c6140cdc06b": {

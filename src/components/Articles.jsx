@@ -28,8 +28,8 @@ const Articles = () => {
 								</Link>
 								<Link to={`/articles/${article_id}`}>
 									<h3>{title}</h3>
+									<img className='articles-img' src={img_url} alt={title} />
 								</Link>
-								<img className='articles-img' src={img_url} alt={title} />
 								<h4>Author: {author}</h4>
 								<p>Date: {created_at.substring(0, 10)}</p>
 								<p>

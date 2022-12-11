@@ -44,3 +44,16 @@ export const getComments = (article_id) => {
 			console.log(err);
 		});
 };
+export const patchArticleVotes = (article_id, inc_votes) => {
+	const patchVotesBody = {
+		inc_votes: inc_votes,
+	};
+	return articlesApi
+		.patch(`/articles/${article_id}/`, patchVotesBody)
+		.then(({ data }) => {
+			return data.article;
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+};
