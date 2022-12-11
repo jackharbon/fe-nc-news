@@ -1933,11 +1933,11 @@
             "parentId": "3be9118a-a914-4a60-1dae-91cf8075d560",
             "childIndex": 3.25,
             "point": [
-              -1574.78,
-              444.76000000000005
+              -1570.04,
+              417.47
             ],
             "rotation": 0,
-            "text": "comment_count / body",
+            "text": "comment_count\n \nbody",
             "style": {
               "color": "black",
               "size": "small",
@@ -1945,7 +1945,7 @@
               "dash": "draw",
               "scale": 1.2067476065473537,
               "font": "mono",
-              "textAlign": "middle"
+              "textAlign": "start"
             }
           },
           "9334d40d-403c-4305-08b2-0c6140cdc06b": {
@@ -10038,7 +10038,7 @@
               787.6
             ],
             "size": [
-              101,
+              91,
               130.30999999999995
             ],
             "rotation": 0,
@@ -10066,7 +10066,7 @@
               1983.12
             ],
             "size": [
-              101,
+              91,
               130.30999999999995
             ],
             "rotation": 0,
@@ -10160,7 +10160,7 @@
               1970.26
             ],
             "size": [
-              101,
+              91,
               130.31000000000017
             ],
             "rotation": 0,

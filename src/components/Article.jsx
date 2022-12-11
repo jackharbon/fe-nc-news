@@ -11,17 +11,17 @@ export default function Article() {
 	const [buttonText, setButtonText] = useState('Show Comments');
 	const [articleVotes, setArticleVotes] = useState();
 
-	function ShowComments() {
-		isOpen ? setIsOpen(false) : setIsOpen(true);
-		isOpen ? setButtonText('Show Comments') : setButtonText('Hide Comments');
-	}
-
 	useEffect(() => {
 		getArticle(article_id).then((article) => {
 			setIsLoading(false);
 			setArticle(article);
 		});
 	}, [article_id]);
+
+	function ShowComments() {
+		isOpen ? setIsOpen(false) : setIsOpen(true);
+		isOpen ? setButtonText(`Show Comments`) : setButtonText('Hide Comments');
+	}
 
 	const increaseVotes = () => {
 		setArticleVotes(article.votes);
@@ -52,7 +52,7 @@ export default function Article() {
 							<Link className='topic-link' to={`/articles/topics/${article.slug}`}>
 								<h3>{article.topic}</h3>
 							</Link>
-							<div className='img-and-text-div'>
+							<div className='img-and-body-div'>
 								<img className='article-img' src={article.img_url} alt={article.title} />
 								<p className='article-body'>{article.body}</p>
 							</div>

@@ -130,11 +130,11 @@ aside { position: -webkit-sticky; position: sticky; top: 60px; height: 10vh; }
 .article-date { font-size: small; font-weight: 300; font-style: italic; }
 .article-card-div > a > h3 { color: var(--color-accent); font-size: 1em; }
 
-.img-and-text-div { display: flex; flex-direction: row; flex-wrap: nowrap; }
+.img-and-body-div { display: flex; flex-direction: column; flex-wrap: nowrap; }
 
 /* - article img - */
 
-.article-img { width: 30%; aspect-ratio: 1/1; object-fit: cover; border-radius: 9px; border: 1px solid var(--font-color); float: left; margin: 10px 20px 10px 0; }
+.article-img { height: 280px; object-fit: cover; margin: 20px 0 30px 0; border: 1px solid var(--color-hover); border-radius: 6px; }
 
 /* - article date & thumbs vote - */
 
@@ -149,7 +149,7 @@ aside { position: -webkit-sticky; position: sticky; top: 60px; height: 10vh; }
 
 .article-votes-counter { font-size: 1em; font-weight: 600; margin: 0; padding: 0; }
 
-/* ------ COMMENTS ------ */
+/* *------ COMMENTS ------* */
 
 /* - show comments button - */
 
@@ -171,13 +171,13 @@ aside { position: -webkit-sticky; position: sticky; top: 60px; height: 10vh; }
 
 /* - blockquote - */
 
-blockquote { font-family: 'Roboto Serif',serif; display: block; border-width: 2px 0; border-style: solid; border-color: var(--color-hover); padding: 1.5em 0 0.5em; margin: .3em 0 1.8em 0; position: relative; font-style: italic; }
+blockquote { font-family: 'Roboto Serif',serif; display: block; border-width: 2px 0 0 0; border-style: solid; border-color: var(--color-hover); padding: 1.5em 0 0.5em; margin: .3em 0 1.8em 0; position: relative; font-style: italic; }
 
 blockquote:before { content: '\201C'; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); background: var(--color-primary); width: 3rem; height: 2rem; font: 6em/1.08em 'Roboto Serif',serif; color: var(--font-color); text-align: center; }
 
-blockquote:after { content: "\2013 \2003" attr(cite); display: block; text-align: left; font-size: 0.875em; color: var(--color-accent); text-transform: uppercase; margin: 10px 0; }
+blockquote:after { content: "\2013 \2003" attr(cite); display: block; text-align: left; font-size: 0.875em; color: var(--color-hover); text-transform: uppercase; margin: 10px 0; }
 
-/* ------ FOOTER ------ */
+/* *------ FOOTER ------9 */
 
 footer { display: flex; flex-direction: row; flex-wrap: nowrap; align-content: center; justify-content: center; align-items: center; border-top: 1px solid var(--color-hover); }
 

@@ -17,7 +17,7 @@ const Comments = () => {
 
 	return (
 		<>
-			<h2>Comments</h2>
+			<h2>{comments.length} Comments</h2>
 			<section className='comments'>
 				{isLoading ? (
 					<h3>... loading</h3>
